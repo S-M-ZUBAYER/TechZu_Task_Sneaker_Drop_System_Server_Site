@@ -1,0 +1,36 @@
+{
+  "name": "sneaker-drop-backend",
+  "version": "1.0.0",
+  "description": "Sneaker Drop System Backend with Real-time Updates",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "sneaker",
+    "drop",
+    "websocket",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4",
+    "mysql2": "^3.9.1",
+    "sequelize": "^6.37.1",
+    "dotenv": "^16.4.1",
+    "cors": "^2.8.5",
+    "node-cron": "^3.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
