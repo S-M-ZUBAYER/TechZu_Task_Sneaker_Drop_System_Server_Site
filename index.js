@@ -142,17 +142,14 @@ const startServer = async () => {
         startReservationExpirationJob(io);
 
         // Start HTTP server
-        // httpServer.listen(PORT, () => {
-        //     console.log('==========================================');
-        //     console.log(`✅ Server running on http://localhost:${PORT}`);
-        //     console.log(`🔌 WebSocket server ready`);
-        //     console.log(`📚 Swagger Docs: http://localhost:${PORT}/api-docs`);
-        //     console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
-        //     console.log(`📊 Database: ${process.env.DB_NAME}`);
-        //     console.log('==========================================');
-        // });
-        app.get("/", (req, res) => {
-            res.json({ message: "Sneaker Drop System API working on Vercel 🚀" });
+        httpServer.listen(PORT, () => {
+            console.log('==========================================');
+            console.log(`✅ Server running on http://localhost:${PORT}`);
+            console.log(`🔌 WebSocket server ready`);
+            console.log(`📚 Swagger Docs: http://localhost:${PORT}/api-docs`);
+            console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
+            console.log(`📊 Database: ${process.env.DB_NAME}`);
+            console.log('==========================================');
         });
 
         // Graceful shutdown
