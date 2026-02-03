@@ -249,7 +249,7 @@ DB_NAME=sneaker_drop_db
 DB_USER=root
 DB_PASSWORD=your_password
 JWT_SECRET=your_secret_key
-CLIENT_URL=http://localhost:5173
+CLIENT_URL=https://tech-zu-task-sneaker-drop-system-cl.vercel.app/
 RESERVATION_DURATION=60000
 ```
 
